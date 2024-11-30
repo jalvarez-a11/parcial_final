@@ -31,5 +31,18 @@
             }
             Console.WriteLine();
         }
+        Console.WriteLine("Presiona Esc para salir.");
+
+        while (true)
+        {
+            if (Console.KeyAvailable)
+            {
+                ConsoleKeyInfo tecla = Console.ReadKey(true);
+                if (tecla.Key == ConsoleKey.Escape)
+                {
+                    break;
+                }
+            }
+        }
     }
  }
